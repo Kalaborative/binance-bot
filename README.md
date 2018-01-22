@@ -12,5 +12,5 @@ Very simple binance trading Bot using Binance REST API
   [1]: https://i.imgur.com/JjgXkZY.png
 
 ## To Download:
-Make sure you have the `binance`package installed via pip. Then clone this repo and run `binance_bot.py`.
+Make sure you have the `binance` package installed via pip. Then clone this repo, insert your API key and API secret at the top, and run `binance_bot.py`.
 Any contributions are welcome, as this is purely experimental. Cheers!
