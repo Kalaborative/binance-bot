@@ -82,13 +82,11 @@ while True:
 	balance = client.get_asset_balance(asset=asset)
 	bitcoins = float(balance['free'])
 	half_bitcoins = format(bitcoins / 2.0, '.8f')
-	BTC = format(bitcoins, '.8f')
 
 	profit = calculate_price_target(last_closing)
 	print("Your profit target is", profit)
 
-	# number_of_coins = find_quantity(half_bitcoins, last_closing)
-	number_of_coins = find_quantity(BTC, last_closing)
+	number_of_coins = find_quantity(half_bitcoins, last_closing)
 	print("Your order will be for {} with {} {}".format(last_closing, number_of_coins, coin))
 
 	try:
